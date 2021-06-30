@@ -3,7 +3,7 @@
 
   //var URLIU = 'http://localhost:3000'; //LOCAL
   //var URLIU = 'https://pfc-uk-generatedesigns.nw.r.appspot.com'; //GOOGLE
-  var = 'https://pfc-uk-generated-designs.herokuapp.com'; //HEROKU
+  var URLIU = 'https://cdn.jsdelivr.net/gh/tman16/fonts/'; //HEROKU
   //var URLIU = 'https://pfcuk-generatedesigns-kypkt.ondigitalocean.app'; //DIGITAL OCEAN
   //var URLIU = 'http://pfcukgeneratedesigns-env.eba-fisam5uf.eu-west-2.elasticbeanstalk.com'; //AWS
 
