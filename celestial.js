@@ -609,14 +609,14 @@ Celestial.display = function(config) {
           }*/ else if (id === "sol") {
               var background = new Image();
               background.crossOrigin = "Anonymous";
-              background.src = "/javascripts/d3-celestial/images/sun.png";
+              background.src = path + "sun.png";
               background.onload = function(){
                context.drawImage(background, pt[0], pt[1], sunImageWidth, sunImageHeight);
               }
           } else if (id === "mer") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/mercury.png";
+            background.src = path + "mercury.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], merImageWidth, merImageHeight);
             };
@@ -633,7 +633,7 @@ Celestial.display = function(config) {
           } else if (id === "ven") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/venus.png";
+            background.src = path + "venus.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], venImageWidth, venImageHeight);
             };
@@ -650,7 +650,7 @@ Celestial.display = function(config) {
           } else if (id === "ter") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/earth.png";
+            background.src = path + "earth.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], terImageWidth, terImageHeight);
             };
@@ -667,7 +667,7 @@ Celestial.display = function(config) {
           } else if (id === "lun") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/moon.png";
+            background.src = path + "moon.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], lunImageWidth, lunImageHeight);
             };
@@ -691,7 +691,7 @@ Celestial.display = function(config) {
           } else if (id === "jup") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/jupiter.png";
+            background.src = path + "jupiter.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], jupImageWidth, jupImageHeight);
             };
@@ -707,7 +707,7 @@ Celestial.display = function(config) {
           } else if (id === "sat") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/saturn.png";
+            background.src = path + "saturn.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], satImageWidth, satImageHeight);
             };
@@ -724,7 +724,7 @@ Celestial.display = function(config) {
           } else if (id === "ura") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/uranus.png";
+            background.src = path + "uranus.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], uraImageWidth, uraImageHeight);
             };
@@ -741,7 +741,7 @@ Celestial.display = function(config) {
           } else if (id === "nep") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/neptune.png";
+            background.src = path + "neptune.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], nepImageWidth, nepImageHeight);
             };
