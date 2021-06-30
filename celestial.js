@@ -5150,7 +5150,7 @@ function exportSVG(fname, starMapTitle, starMapNames, starMapDate, starMapLocati
          //.attr("class", function(d) { return "planets " + d.id; })
          //.attr({dy: ".35em"});
          .enter().append('svg:image')
-         .attr('xlink:href', function(d) { return URLIU + "/javascripts/d3-celestial/images/" + d.id + ".svg"; })//`https://cdn.shopify.com/s/files/1/0272/8512/7220/files/sun.png`)
+         .attr('xlink:href', function(d) { return URLIU + d.id + ".svg"; })//`https://cdn.shopify.com/s/files/1/0272/8512/7220/files/sun.png`)
          //.attr('width', 15)
          //.attr('height', 15)
          .attr('width', function(d) { if ( document.getElementById('watermark').getAttribute('data-sun') == 'No') { if ( d.id == "sol" || d.id == "lun" ) { return 0 } else { return 15 } } else { if ( d.id == "sol" || d.id == "lun" ) { return 25 } else { return 15 } } })
@@ -5181,7 +5181,7 @@ function exportSVG(fname, starMapTitle, starMapNames, starMapDate, starMapLocati
           groups.planets.selectAll(".moon")
            .data(jlun.features)
            .enter().append('svg:image')
-           .attr('xlink:href', function(d) { return URLIU + "/javascripts/d3-celestial/images/" + d.id + ".svg"; })
+           .attr('xlink:href', function(d) { return URLIU + d.id + ".svg"; })
            .attr('width', function(d) { if ( document.getElementById('watermark').getAttribute('data-sun') == 'No') { if ( d.id == "lun" ) { return 0 } } else { if ( d.id == "lun" ) { return 25 } } })
            .attr('height', function(d) { if ( d.id == "lun" ) { return 25 } })
            .attr("transform", function(d) { return point(d.geometry.coordinates); })
