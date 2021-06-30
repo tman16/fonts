@@ -674,7 +674,7 @@ Celestial.display = function(config) {
           } else if (id === "mar") {
             var background = new Image();
             background.crossOrigin = "Anonymous";
-            background.src = "/javascripts/d3-celestial/images/mars.png";
+            background.src = path + "mars.png";
             background.onload = function(){
               context.drawImage(background, pt[0], pt[1], marImageWidth, marImageHeight);
             };
