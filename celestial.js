@@ -1,3 +1,33 @@
+  var sunImageWidth = 15,
+    sunImageHeight = 15;
+
+  var lunImageWidth = 15,
+    lunImageHeight = 15;
+
+  var merImageWidth = 15,
+    merImageHeight = 15;
+
+  var venImageWidth = 15,
+    venImageHeight = 15;
+
+  var terImageWidth = 15,
+    terImageHeight = 15;
+
+  var marImageWidth = 15,
+    marImageHeight = 15;
+
+  var jupImageWidth = 15,
+    jupImageHeight = 15;
+
+  var satImageWidth = 15,
+    satImageHeight = 15;
+
+  var uraImageWidth = 15,
+    uraImageHeight = 15;
+
+  var nepImageWidth = 15,
+    nepImageHeight = 15;
+
 // Copyright 2015-2020 Olaf Frohn https://github.com/ofrohn, see LICENSE
 !(function() {
 
