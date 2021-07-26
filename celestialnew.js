@@ -31,7 +31,7 @@ nepImageHeight = 15;
 // Copyright 2015-2020 Olaf Frohn https://github.com/ofrohn, see LICENSE
 !(function() {
     var URLIU = 'https://cdn.jsdelivr.net/gh/tman16/fonts/';
-    
+
     var Celestial = {
       version: '0.7.35',
       container: null,
@@ -1695,7 +1695,7 @@ nepImageHeight = 15;
       zoomextend: 10,     // maximum zoom level
       adaptable: true,    // Sizes are increased with higher zoom-levels
       interactive: true,  // Enable zooming and rotation with mousewheel and dragging
-      disableAnimations: false, // Disable all animations
+      disableAnimations: true, // Disable all animations
       form: false,        // Display settings form
       location: false,    // Display location settings, deprecated, use formFields
       // Set visiblity for each group of fields of the form
