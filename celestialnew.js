@@ -5120,7 +5120,7 @@ nepImageHeight = 15;
             .data(jp.features)
             .enter().append('svg:image')
             .attr('xlink:href', function(d) { return URLIU + d.id + ".svg"; })
-            .attr('width', function(d) { if ( document.getElementById('watermark').getAttribute('data-sun') == 'No') { if ( d.id == "sol" || d.id == "lun" ) { return 0 } else { return 15 } } else { if ( d.id == "sol" || d.id == "lun" ) { return 25 } else { return 15 } } })
+            .attr('width', function(d) {  if ( d.id == "sol" || d.id == "lun" ) { return 25 } else { return 15 } })
             .attr('height', function(d) { if ( d.id == "sol" ) { return 25 } else { return 15 } })
             .attr("transform", function(d) { return point(d.geometry.coordinates); })
             .attr("class", function(d) { return "planets " + d.id; });
@@ -5140,7 +5140,7 @@ nepImageHeight = 15;
                 .data(jlun.features)
                 .enter().append('svg:image')
                 .attr('xlink:href', function(d) { return URLIU + d.id + ".svg"; })
-                .attr('width', function(d) { if ( document.getElementById('watermark').getAttribute('data-sun') == 'No') { if ( d.id == "lun" ) { return 0 } } else { if ( d.id == "lun" ) { return 25 } } })
+                .attr('width', function(d) {  if ( d.id == "lun" ) { return 25 } })
                 .attr('height', function(d) { if ( d.id == "lun" ) { return 25 } })
                 .attr("transform", function(d) { return point(d.geometry.coordinates); })
                 .attr("class", function(d) { return "planets " + d.id; });
