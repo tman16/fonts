@@ -4953,6 +4953,7 @@ nepImageHeight = 15;
              .attr("class", function(d) { return "constNames" + d.properties.rank; })
              .attr("transform", function(d, i) { return point(d.geometry.coordinates); })
              .attr("font-size", "0.5em")
+             .style("fill", "#F1CA59")
              .attr("fill", "#F1CA59")
              .text( function(d) { return constName(d); } ); 
      
@@ -5163,6 +5164,9 @@ nepImageHeight = 15;
              .data(jp.features)
              .enter().append("text")
              .attr("transform", function(d) { return point(d.geometry.coordinates); })
+             .attr("font-size", "0.5em")
+             .style("fill", "#F1CA59")
+             .attr("fill", "#F1CA59")
              .text( function(d) { return d.properties.name; })
              .attr({dy: ".85em", dx: "-.35em"})
              .attr("class", function(d) { return "planetNames " + d.id; });
@@ -5171,6 +5175,9 @@ nepImageHeight = 15;
                .data(jlun.features)
                .enter().append("text")
                .attr("transform", function(d) { return point(d.geometry.coordinates); })
+               .attr("font-size", "0.5em")
+               .style("fill", "#F1CA59")
+               .attr("fill", "#F1CA59")
                .text( function(d) { return d.properties.name; })
                .attr({dy: ".85em", dx: "-.35em"})
                .attr("class", function(d) { return "planetNames " + d.id; });
