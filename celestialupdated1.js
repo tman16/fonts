@@ -4952,6 +4952,8 @@ nepImageHeight = 15;
              .enter().append("text")
              .attr("class", function(d) { return "constNames" + d.properties.rank; })
              .attr("transform", function(d, i) { return point(d.geometry.coordinates); })
+             .attr("font-size", "0.5em")
+             .attr("fill", "#F1CA59")
              .text( function(d) { return constName(d); } ); 
      
             styles.constNames1 = {"fill": cfg.constellations.nameStyle.fill[0],
