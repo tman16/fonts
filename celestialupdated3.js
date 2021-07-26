@@ -5183,7 +5183,7 @@ nepImageHeight = 15;
                .attr("class", function(d) { return "planetNames " + d.id; });
             }
           //}
-          styles.planetNames = svgTextStyle(cfg.planets.nameStyle);
+          //styles.planetNames = svgTextStyle(cfg.planets.nameStyle);
           
           callback(null);
         });  
