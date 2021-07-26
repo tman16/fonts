@@ -30,6 +30,8 @@ nepImageHeight = 15;
 
 // Copyright 2015-2020 Olaf Frohn https://github.com/ofrohn, see LICENSE
 !(function() {
+    var URLIU = 'https://cdn.jsdelivr.net/gh/tman16/fonts/';
+    
     var Celestial = {
       version: '0.7.35',
       container: null,
