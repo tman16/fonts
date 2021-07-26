@@ -4957,7 +4957,7 @@ nepImageHeight = 15;
              .attr("fill", "#F1CA59")
              .text( function(d) { return constName(d); } ); 
      
-            styles.constNames1 = {"fill": cfg.constellations.nameStyle.fill[0],
+            /*styles.constNames1 = {"fill": cfg.constellations.nameStyle.fill[0],
                                   "fill-opacity": cfg.constellations.nameStyle.opacity[0],
                                   "font": cfg.constellations.nameStyle.font[0],
                                   "text-anchor": svgAlign(cfg.constellations.nameStyle.align)};
@@ -4968,7 +4968,7 @@ nepImageHeight = 15;
             styles.constNames3 = {"fill": cfg.constellations.nameStyle.fill[2],
                                   "fill-opacity": cfg.constellations.nameStyle.opacity[2],
                                   "font": cfg.constellations.nameStyle.font[2],
-                                  "text-anchor": svgAlign(cfg.constellations.nameStyle.align)};
+                                  "text-anchor": svgAlign(cfg.constellations.nameStyle.align)};*/
             callback(null);
           });
         });
