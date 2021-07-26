@@ -5601,6 +5601,8 @@ function exportSVG(fname, starMapTitle, starMapNames, starMapDate, starMapLocati
       a.click();
       d3.select(a).remove();
       d3.select("#d3-celestial-svg").remove();*/
+    } else if (exportCallback !== null) {
+       exportCallback(svg.node().outerHTML);
     } else {
       return svg.node().outerHTML;
     }
@@ -5688,7 +5690,7 @@ d3.svg.customSymbol = function() {
 	
 var exportCallback = null;
 
-Celestial.exportSVG = function() {
+Celestial.exportSVG = function(callback) {
   if (!callback) return;
   exportCallback = callback;
   exportSVG();
