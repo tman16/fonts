@@ -5685,6 +5685,8 @@ d3.svg.customSymbol = function() {
   };
   return symbol;
 };
+	
+var exportCallback = null;
 
 Celestial.exportSVG = function() {
   if (!callback) return;
