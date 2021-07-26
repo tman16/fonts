@@ -5687,7 +5687,9 @@ d3.svg.customSymbol = function() {
 };
 
 Celestial.exportSVG = function() {
-  
+  if (!callback) return;
+  exportCallback = callback;
+  exportSVG();
 };
 var datetimepicker = function(cfg, callback) {
   var date = new Date(), 
