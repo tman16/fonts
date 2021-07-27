@@ -4958,7 +4958,7 @@ nepImageHeight = 15;
              .attr("font-variant", "small-caps")
              .style("fill", "#F1CA59")
              .attr("fill", "#F1CA59")
-             .text( function(d) { return constName(d); } ); 
+             .text( function(d) { return constName(d).toUpperCase(); } ); 
      
             /*styles.constNames1 = {"fill": cfg.constellations.nameStyle.fill[0],
                                   "fill-opacity": cfg.constellations.nameStyle.opacity[0],
@@ -5173,7 +5173,7 @@ nepImageHeight = 15;
              .attr("font-weight", "bold")
              .style("fill", "#F1CA59")
              .attr("fill", "#F1CA59")
-             .text( function(d) { return d.properties.name; })
+             .text( function(d) { if (d.id == "sol") { return } else { return d.properties.name } })
              .attr({dy: ".85em", dx: "-.35em"})
              .attr("class", function(d) { return "planetNames " + d.id; });
             if (jlun.features.length > 0) {
