@@ -5126,8 +5126,8 @@ nepImageHeight = 15;
             .data(jp.features)
             .enter().append('svg:image')
             .attr('xlink:href', function(d) { return URLIU + d.id + ".svg"; })
-            .attr('width', function(d) {  if ( d.id == "sol" || d.id == "lun" ) { return 25 } else { return 15 } })
-            .attr('height', function(d) { if ( d.id == "sol" ) { return 1 } else { return 1 } })
+            .attr('width', function(d) {  if ( d.id == "sol" ) { return 25 } else { return 15 } })
+            .attr('height', function(d) { if ( d.id == "sol" ) { return 25 } else { return 15 } })
             .attr("transform", function(d) { return point(d.geometry.coordinates); })
             .attr("class", function(d) { return "planets " + d.id; });
           }
